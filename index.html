@@ -3,12 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shortly</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header>
+      <!-- nav start -->
+      <nav class="">
+        <div class="container">
+          <div class="logo">
+            <img src="./imgs/logo.svg" alt="logo" />
+          </div>
+          <div class="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="transparent-background"></div>
+          <ul class="nav-links">
+            <div class="links">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resourses</a></li>
+            </div>
+            <div class="links-buttons">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <!-- nav end  -->
+      <!-- header start -->
+      <div class="container">
+        <div class="hero">
+          <h1>More than just shorter links</h1>
 
-    
+          <p>
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+
+          <a href="#">Get Started</a>
+        </div>
+        <div class="side-image">
+          <img src="./imgs/illustration-working.svg" alt="" />
+        </div>
+      </div>
+      <!-- header end -->
+    </header>
+    <section class="advenced-statistic">
+      <div class="container">
+        <div class="short-link">
+          <div class="input-cont">
+            <input type="text" placeholder="Shorten a link here..." />
+            <span></span>
+          </div>
+          <input type="button" id="submit-url" value="Shorten it!" />
+        </div>
+        <!-- links -->
+        <div class="shorted-links"></div>
+        <!-- links end -->
+        <div class="advenced-statistics">
+          <div class="head">
+            <h3>Advanced Statistics</h3>
+            <p>
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="img-cont">
+                <img src="imgs/icon-fully-customizable.svg" alt="" />
+              </div>
+              <h4 class="card-head">Brand Recognition</h4>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don-t mean a thing. Branded links help instil confidence in your
+                content
+              </p>
+            </div>
+            <div class="card">
+              <div class="img-cont">
+                <img src="imgs/icon-detailed-records.svg" alt="" />
+              </div>
+              <h4 class="card-head">Brand Recognition</h4>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don-t mean a thing. Branded links help instil confidence in your
+                content
+              </p>
+            </div>
+            <div class="card">
+              <div class="img-cont">
+                <img src="imgs/icon-brand-recognition.svg" alt="" />
+              </div>
+              <h4>Brand Recognition</h4>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don-t mean a thing. Branded links help instil confidence in your
+                content
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="boost-link">
+      <div class="container">
+        <h3>Boost your links today</h3>
+        <a href="#">Get Started</a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="logo-cont">
+          <img src="./imgs/logo-light.svg" alt="logo" class="logo" />
+        </div>
+
+        <ul class="featurs">
+          <p>Features</p>
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+        <ul class="resourses">
+          <p>Resourses</p>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <ul class="company">
+          <p>Company</p>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="media-links">
+          <li>
+            <a href="#"
+              ><img src="./imgs/icon-instagram.svg" alt="instagram"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./imgs/icon-facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./imgs/icon-twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./imgs/icon-pinterest.svg" alt="pintrest"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
