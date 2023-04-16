@@ -56,7 +56,6 @@ function toggleNav() {
   get(".transparent-background").classList.toggle("active");
   document.body.classList.toggle("no-scroll");
 }
-// url = "https://google.com";
 
 // fetch link
 async function shortIt(url) {
@@ -107,8 +106,9 @@ function showLink(origin, shorted) {
   get(".shorted-links").appendChild(container);
 }
 
-// copy link
 
+
+// copy link
 document.querySelectorAll(".copy-btn").forEach((cBtn) => {
   cBtn.addEventListener("click", () => {
     cBtn.classList.add("copied");
