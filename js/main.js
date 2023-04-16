@@ -104,16 +104,17 @@ function showLink(origin, shorted) {
 
   // Add the container element to the document body
   get(".shorted-links").appendChild(container);
+  copyBtn();
 }
 
-
-
 // copy link
-document.querySelectorAll(".copy-btn").forEach((cBtn) => {
-  cBtn.addEventListener("click", () => {
-    cBtn.classList.add("copied");
-    cBtn.textContent = "copied!";
-    const linkToCopy = cBtn.previousElementSibling.firstChild.textContent;
-    navigator.clipboard.writeText(linkToCopy);
+function copyBtn() {
+  document.querySelectorAll(".copy-btn").forEach((cBtn) => {
+    cBtn.addEventListener("click", () => {
+      cBtn.classList.add("copied");
+      cBtn.textContent = "copied!";
+      const linkToCopy = cBtn.previousElementSibling.firstChild.textContent;
+      navigator.clipboard.writeText(linkToCopy);
+    });
   });
-});
+}
